@@ -1,0 +1,565 @@
+
+*{
+    margin: 0;
+    padding: 0;  
+ }
+
+/* navbar  */
+
+/* nav layout :img and ul*/
+nav{
+  
+    display: flex;
+    justify-content: space-between;
+    height:20vh;
+}
+
+/* ul layout and width and center and space between items and margin  */
+
+nav ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding:0em 5em;
+    margin-right: 0.3em;
+    
+}
+ /* a color and decoration  */
+nav ul li a {
+    text-decoration: none;
+    color:black; 
+}
+
+/* icons margin between a and icons */
+nav ul li a i{
+   margin-right: 0.3em;
+}
+
+nav ul  #icon-header{
+    display: none;
+}
+
+
+/* media Responsive mobile  */
+@media   (max-width:427px) {
+
+    /* hide the ( a )in phone  */
+    nav ul li a{
+        display: none !important;
+    }
+    /* display bars icons in phone  */
+    nav ul  #icon-header{
+        display: flex !important; 
+    
+    }
+ }
+  /* responsive in tablet */
+ @media (max-width:844px) and (min-width:426px) {
+       /* hide the ( a )in tablet  */
+     nav ul li a {
+          display: none !important;
+          
+     }
+      /* display bars icons in tablet  */
+     nav ul #icon-header{
+        display: flex !important; 
+     }
+
+ }
+ /* navbar */
+
+ /* header img+title */
+
+ /* layout h1 and h3 and background-img and min-height and opacity*/
+header .bg {
+    background:linear-gradient(rgb(255,255,255,0.4),rgb(255,255,255,0.4) ), url(new.jpg) ;
+    background-position: center;
+    background-size: cover;
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+   }
+/* margin title */
+header h1{
+    margin-top: 2em;
+    margin-left: 1em;
+    
+   }
+/* margin sub title*/
+header h3{
+    margin-left: 2em;
+   }
+/* media Responsive mobile  */
+@media (max-width:427px) {
+  /*   decreasing  the min-height to background img to responsive in phone  */
+    header .bg { 
+        min-height: 30vh ;  
+
+    }
+/* decreasing  the font-size to title */
+    header h1{
+        font-size: 1em ;
+    }
+    /* decreasing  the font-size to sub title  */
+    header h3{
+        font-size: 0.8em ;
+    } 
+   }
+
+   @media (max-width:800px)and (min-width:427px) {
+       /* decreasing  the font-size to title */
+    header h1{
+        font-size: 1.5em;
+    }
+    /* decreasing  the font-size to sub title  */
+    header h3{
+        font-size:1em;
+    }   
+   }
+
+   @media (max-width:989px) and (min-width:873px) {
+    header .bg {
+        min-height: 90vh;
+    } 
+   }
+  
+   @media (max-width:873px) and (min-width:580px) {
+    header .bg {
+        min-height: 70vh;
+    }
+       
+   }
+/* haneen new */
+   @media (max-width:637px) and (min-width:580px){
+    header .bg {
+        min-height: 55vh;
+    }
+   }
+         /* responsive in tablet */
+    @media (max-width:580px) and (min-width:425px){
+    /* decreasing  the min-height to background img to responsive in tablet*/
+    header .bg { 
+        min-height: 40vh;   
+    }  
+    }
+
+ /* header img+title */
+
+ /* section skills  */
+
+     /* skills margin and center */
+     section .main-skill {
+         margin: 1em;
+       text-align: center;
+      
+    }
+    /* margin icons */
+    section .main-skill i{
+     margin-right: 0.5em;  
+ }
+ /* layout to section skills and center items  */
+
+   section .Skills{
+       display: grid;
+       grid-template-columns:repeat(2,1fr);
+       gap:2em;
+       width: 80%;
+       justify-content: space-between;
+       margin: 0 auto;
+      
+   }
+ /*margin  and padding and box-shadow and raduis to box in desktop*/
+   section .Technical-Skills{
+       margin:1em ;
+       padding:2em;
+       box-shadow: #32978a 0.1em 0.2em 0.1em 0.2em;
+       border-radius: 1em ;   
+   }
+
+  /*margin  and padding and box-shadow and raduis to box in desktop*/
+   section .Soft-skills{
+    margin:1em ;
+    padding:2em;
+    box-shadow: #32978a 0.1em 0.2em 0.1em 0.2em;
+    border-radius: 1em ; 
+   }
+
+  /* margin  to main titel in desktop */
+   section .Soft-skills h5{
+       margin-bottom: 1em;
+    
+   }
+     /* margin  to main titel in desktop */
+   section .Technical-Skills h5{
+    margin-bottom: 1em;
+   
+   }
+   /*margin  and padding and box-shadow and raduis to box in desktop*/
+   section .Education {
+       margin:1em ;
+       padding:2em;
+       box-shadow: #32978a 0.1em 0.2em 0.1em 0.2em;
+       border-radius: 1em ; 
+
+   }
+     /* margin  to main titel in desktop */
+   section .Education h5{
+       margin-bottom: 1em;
+   }
+
+   /*margin  and padding and box-shadow and raduis to box in desktop*/
+section .Training-courses{
+    margin:1em ;
+    padding:2em;
+    box-shadow: #32978a 0.1em 0.2em 0.1em 0.2em;
+    border-radius: 1em ; 
+  
+}
+/* margin  to main titel in desktop */
+section .Training-courses h5{
+    margin-bottom: 1em;
+}
+/* media Responsive mobile */
+@media (max-width:700px){
+    /* font-size to skills  */
+    section .main-skill {
+        font-size: 1em;
+       
+    }
+    /* padding and font-size to main title in phone  */
+    section .Technical-Skills h5{
+        font-size: 1em;
+    }
+
+    /* padding and font-size to main title in phone  */
+    section .Soft-skills h5{
+        font-size: 1em;
+      
+    }
+     /* padding and font-size to box in phone  */
+    section .Soft-skills{
+        padding:1.25em;
+        font-size: 0.8em;
+    }
+
+     /* padding and font-size to box in phone  */
+    section .Technical-Skills{
+        padding:1.25em;
+        font-size: 0.8em;
+    }
+   /* padding and font-size to main title in phone  */
+    section .Education h5 {
+        font-size:1em;
+
+    }
+     /* padding and font-size to box in phone  */
+    section .Education{
+        padding :1.25em;
+        font-size: 0.7em;
+    }
+
+    /* padding and font-size box in phone  */
+    section .Training-courses{
+        padding :1.25em;
+        font-size: 0.7em;
+    }
+     /* font size to main title in phone */
+    section .Training-courses h5{
+        font-size: 1em;
+    }
+}
+@media (max-width:321px) {
+   section .Skills{
+       margin: 1em;
+   }
+    
+}
+  /* section skills  */
+
+  /* section Service  */
+  /* layout Service section and gap and  margin and width to boxs   */
+/* background service  */
+  .servicebg{
+      background-color: rgb(228, 215, 195);
+  }
+  section .Service{
+     width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2em;
+    margin: 0 auto;
+  
+}
+/* center text Service and margin and padding */
+section .ser{
+    text-align: center;
+    margin-top: 1em;
+    padding:1em;
+}
+ /* margin icons */
+section .ser i{
+    margin-right: 0.5em;  
+}
+
+/* border and  radius  and padding and margin  and center text in box*/
+section .Service .phone{
+    border:0.1em black solid;
+    border-radius: 1em;
+    margin: 1em;
+    padding:0.5em;
+    text-align: center;
+}
+
+ /* border and  radius  and padding and margin  and center text in box*/
+section .Service .Browser{
+    border:0.1em black solid;
+    border-radius: 1em;
+    margin: 1em;
+    padding:0.5em;
+    text-align: center;
+}
+
+/* border and  radius  and padding and margin  and center text in box*/
+section .Service .Maintenance{
+    border :0.1em black solid;
+    border-radius: 1em;
+    margin: 1em;
+    padding:0.5em;
+    text-align: center;
+}
+
+/* border and  radius  and padding and margin  and center text in box*/
+section .Service .SEO{
+    text-align: center;
+    border:0.1em solid black;
+    border-radius: 1em;
+    margin: 1em;
+    padding:0.5em;
+}
+
+
+/* media Responsive phone */
+@media (max-width:428px){
+
+/* decreasing font-size h5 in phone  */
+section .Service h5{
+    font-size:0.7em;
+}
+
+/* decreasing font-size p in phone */
+section .Service p{
+     font-size: 0.5em;
+}
+
+
+ /*  decreading font-size tilte  */
+section .ser {
+    font-size:1em;
+}
+}
+
+/* section Service  */
+
+
+ /* section project */
+ /* layout to project img  and ul and  raduis box  */
+ section .Poject{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em ;
+}
+ /* center to img and ul  */
+section .Poject img,ul {
+   margin: 0 auto;
+  
+}
+/* margin and center to project title */
+section .main-project{
+   text-align: center; 
+   margin-top: 1em ;
+   margin-bottom: 1em;
+}
+
+/* margin to icon project */
+section .main-project i{
+   margin-right: 0.5em;  
+}
+
+/* text-decoration and color and font-size to (a) */
+section .Poject ul li a {
+   text-decoration: none;
+   color:black;
+   font-size: 1.25em;
+}
+
+/* margin to see more  */
+section .Poject ul h4{
+    margin-top: 1em;
+}
+
+/* media Responsive tablet and phone */
+@media (max-width:500px) {
+   /*  decreasing the width and height img to Responsive to phone and tablet */
+    section .Poject img {
+       width: 75vw;
+       height: 50vh;
+    }
+    /* decreasing the font-size to responsive to phone and tablet  */
+    section .Poject ul li a{
+       font-size: 0.8em;
+   }
+    
+   /*  decreasing the font-size  title */
+   section .main-project {
+       font-size: 1em;
+   }
+  /* decreasing font-size and margin to see more  */
+   section .Poject ul h4{
+       font-size: 0.9em;
+       margin-top: 0.5em;
+   }
+}
+/* section project */
+
+
+/* section Testimonials  */
+
+ /* layout Testimonials and space around    */
+/* background section Testimonial */
+ .Testimonialbg{
+    background-color: rgb(228, 215, 195);
+}
+/* layout Testimonials */
+ section .Testimonials{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* center Testimonials text and margin and padding   */
+section .test {
+    text-align: center;
+    margin-top: 1em;
+    padding:1em;
+}
+/* margin icons */
+section .test i{
+    margin-right: 0.5em;
+}
+
+
+@media (max-width:610px) {
+    /* deacreding  width and height img*/
+    section .Testimonials img{
+          width: 45vw;
+          height: 30vh;
+    }
+     /*deacreding  font-size  Testimorials*/
+    section .test{
+        font-size: 1em;
+    }
+}
+/* section Testimonials  */
+
+
+
+
+/* section Contact */
+
+/* layout contact  and width  and space around and margin center and padding  */
+section .Contact{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin: 0 auto; 
+    padding:2em;
+ }
+ /* margin title and center */
+ section .main-contact{
+     margin: 1em 0;
+     text-align: center;
+ }
+ /* margin icon data*/
+ section .Contact i{
+     margin-right: 0.5em;
+ }
+  /* margin icon title */
+ section .main-contact i{
+     margin-right: 0.5em;
+ }
+ /* decoration to a */
+ section .Contact a{
+     text-decoration: none;
+     color:black;
+ }
+ 
+ /* responsive in tablet and phone  */
+ @media(max-width:561px) {
+     /* decreasing font-size title */
+     section .main-contact{
+         font-size:0.8em;
+     }
+      /* decreasing font-size p */
+     section .Contact p{
+         font-size:0.7em;
+     }   
+ }
+/* decreasing font-size p  */
+ @media (max-width:393px) {
+    section .Contact p  {
+    font-size: 0.56em;
+ }
+}
+ /* section Contact */
+
+
+ /* section footer  */
+   /* foteer background and layout  */
+   footer{
+       background-color: rgb(228, 215, 195);
+       display: grid;
+       grid-auto-columns: 1fr;
+   }
+   
+   /* center the copyright */
+   footer p {
+       text-align: center;
+   }
+
+   /* ul layout and center the items */
+   footer  ul{
+       display: flex;
+       justify-content:center;
+     
+   }
+  /* margin between icons  */
+   footer ul li {
+       margin:  1em;
+       list-style-type: none;
+   }
+   /* color to icon  */
+   footer ul li a{
+       color:black;
+   }
+   /* icons margin  */
+   footer ul{
+       margin-top: 1em;
+   }
+
+   /* footer .up  i{
+       width: 1.5em;
+       height: 1.5em;
+   } */
+   @media (max-width:426px) {
+       footer i{
+           font-size: 0.7em;
+       }
+   }
+
+/* section footer  */
+ 
+ 
+
+
